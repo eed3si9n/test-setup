@@ -31,6 +31,8 @@ jobs:
             java: 8
             distribution: zulu
     runs-on: ${{ matrix.os }}
+    env:
+      JAVA_OPTS: -Xms2048M -Xmx2048M -Xss6M -XX:ReservedCodeCacheSize=256M -Dfile.encoding=UTF-8
     steps:
     - name: Checkout
       uses: actions/checkout@v4
