@@ -35,7 +35,7 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v4
     - name: Setup sbt
-      uses: eed3si9n/setup-sbt@e5010c13660fc21152394057f1c3c2adf388089a
+      uses: eed3si9n/setup-sbt@9b4404aac5da5df5f182eedb3a4083ad9a5d113e
     - name: Setup JDK
       uses: actions/setup-java@v4
       with:
