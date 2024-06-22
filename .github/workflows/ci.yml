@@ -43,7 +43,7 @@ jobs:
         java-version: ${{ matrix.java }}
         cache: sbt
     - name: Setup sbt
-      uses: eed3si9n/setup-sbt@765518fc5c077860676e08c1d4a59bab9797bca9
+      uses: sbt/setup-sbt@v1
       with:
         sbt-runner-version: 1.9.9
     - name: Build and test
